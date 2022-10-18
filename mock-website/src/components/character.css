@@ -1,0 +1,448 @@
+:root {
+    --skin: rgb(241, 212, 173);
+    --lips: rgb(233, 197, 150);
+    --hair: #DE5665;
+    --iris: #1749A5;
+    --hair: black;
+    --iris: black;
+}
+
+body {
+    display: flex;
+    margin: 100px 0 0 0;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    overflow: visible;
+}
+
+.face {
+    width: 180px;
+    height: 220px;
+    background-color: var(--skin);
+    border-radius: 100% 100% / 70% 70% 120% 120%;
+    z-index: 1;
+}
+
+.neck {
+    width: 60px;
+    height: 100px;
+    background-color: var(--skin);
+    border-radius: 1.5em;
+    box-shadow: inset 0 3em var(--lips);
+    position: relative;
+    top: -88px;
+}
+
+.upper-lip {
+    width: 40px;
+    height: 8px;
+    /* background-color: var(--lips); */
+    /* border-radius: 100% 100% / 300% 300% 100% 12%; */
+    z-index: 2;
+    margin: 10px 0 0 0;
+    animation: nod-layer-2 2s ease-in 3s infinite;
+}
+
+.lip {
+    z-index: 2;
+    fill: var(--lips);
+}
+
+.lower-lip {
+    width: 20px;
+    height: 3px;
+    background-color: var(--lips);
+    border-radius: 100% 100% / 300% 300% 12% 12%;
+    z-index: 2;
+    margin: 15px;
+    animation: nod-layer-2 2s ease-in 3s infinite;
+}
+
+.nose3 {
+    width: 20px;
+    height: 5px;
+    background-color: var(--lips);
+    border-radius: 100% 100%;
+    z-index: 2;
+    position: relative;
+    animation: nod-layer-1 2s ease-in 3s infinite;
+}
+
+.left-eye {
+    width: 40px;
+    height: 40px;
+    background-color: white;
+    border-radius: 50%;
+    z-index: 2;
+    margin: 5px 16px 0 16px;
+    animation: turn 1.2s linear infinite;
+    animation: nod-layer-2 2s ease-in 3s infinite;
+}
+
+.right-eye {
+    width: 40px;
+    height: 40px;
+    background-color: white;
+    border-radius: 50%;
+    z-index: 2;
+    margin: 5px 16px 0 16px;
+    animation: nod-layer-2 2s ease-in 3s infinite;
+}
+
+.iris {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: var(--iris);
+    z-index: 3;
+}
+
+.lid {
+    width: 40px;
+    height: 20px;
+    background-color: var(--lips);
+    border-radius: 100% 100% / 200% 200% 10% 10%;
+    z-index: 3;
+    position: relative;
+    margin: 0 16px;
+    top:-43px;
+    animation: nod-layer-3 2s ease-in 3s infinite;
+}
+
+.left-ear {
+    width: 50px;
+    height: 50px;
+    background-color: var(--lips);
+    border-radius: 50% 50% / 40% 40% 20% 90%;
+    z-index: 0;
+    margin: 0 60px;
+    position: relative;
+    top: -120px;
+    box-shadow: inset 0 .5em var(--skin);
+    animation: nod-layer-4 2s ease-in 3s infinite;
+}
+
+.right-ear {
+    width: 50px;
+    height: 50px;
+    background-color: var(--lips);
+    border-radius: 50% 50% / 40% 40% 90% 20%;
+    z-index: 0;
+    margin: 0 60px;
+    position: relative;
+    top: -120px;
+    box-shadow: inset 0 .5em var(--skin);
+    animation: nod-layer-4 2s ease-in 3s infinite;
+}
+
+.left-brow {
+    width: 50px;
+    height: 10px;
+    background-color: var(--skin);
+    box-shadow: inset 0 .4em var(--hair);
+    border-radius: 80% 100% 30% 40% / 70% 100% 90% 100%;
+    z-index: 3;
+    margin: 80px 10px 0 10px;
+    animation: nod-layer-2 2s ease-in 3s infinite;
+}
+
+.right-brow {
+    width: 50px;
+    height: 10px;
+    background-color: var(--skin);
+    box-shadow: inset 0 .4em var(--iris);
+    border-radius: 100% 80% 40% 30% / 100% 70% 100% 90%;
+    z-index: 3;
+    margin: 80px 10px 0 10px;
+    animation: nod-layer-2 2s ease-in 3s infinite;
+}
+
+.hair-back {
+    width: 200px;
+    height: 300px;
+    border-radius: 70% 70% 100% 20% / 50% 50% 100% 100%;
+    background-color: var(--hair);
+    z-index: -1;
+    position: relative;
+    top: -380px;
+    animation: nod-layer-4 2s ease-in 3s infinite;
+}
+
+.hair-front {
+    position: relative;
+    top: -660px;
+    z-index: 4;
+    animation: nod-layer-2 2s ease-in 3s infinite;
+}
+
+.hair-front-left {
+    width: 105px;
+    height: 300px;
+    border-radius: 60% 60% 10% 100% / 30% 30% 100% 100%;
+    background-color: rgba(0, 0, 0, 0);
+    box-shadow: inset 2em 2em  var(--hair);
+    z-index: 4;
+    position: relative;
+    left: 7px;
+}
+
+.hair-front-right {
+    width: 105px;
+    height: 300px;
+    border-radius: 60% 60% 100% 10% / 30% 30% 100% 100%;
+    background-color: rgba(0, 0, 0, 0);
+    box-shadow: inset -2em 2em  var(--hair);
+    z-index: 4;
+    position: relative;
+    left: -7px;
+}
+.bangs {
+    width: 140px;
+    height: 50px;
+    background-color: var(--hair);
+    border-radius: 100% 100% 40% 30% / 200% 200% 100% 90%;
+    z-index: 3;
+    position: relative;
+    top: -979px;
+    animation: nod-layer-2 2s ease-in 3s infinite;
+}
+
+.highlights {
+    position: relative;
+    top: -1444px;
+}
+.highlight-left {
+    width: 10px;
+    height: 10px;
+    background-color: rgba(255, 255, 255, 0.445);
+    border-radius: 50%;
+    z-index: 4;
+    margin: 0 26px;
+}
+
+.highlight-right {
+    width: 10px;
+    height: 10px;
+    background-color: rgba(255, 255, 255, 0.445);
+    border-radius: 50%;
+    z-index: 4;
+    margin: 0 36px;
+}
+
+
+.tie {
+    width: 100px;
+    height: 100px;
+    z-index: 3;
+    position: relative;
+    top: -790px;
+}
+.cls-2 {
+    fill:#ffffff;
+    z-index: 5;
+}
+
+.shirt {
+    width: 275px;
+    height: 140px;
+    border-radius: 100% 100% / 120% 120% 10% 10%;
+    background-color:#f5f4e4;
+    position: relative;
+    top: -870px;
+}
+
+.desk {
+    width: 600px;
+    height: 300px;
+    border-radius: 3%/5%;
+    background-color:#000000;
+    position: relative;
+    top: -930px; 
+}
+
+.desk-icon {
+    width: 360px;
+    height: 80px;
+    background-image: url(https://assets.website-files.com/62a14eafd65c8678f1b89647/62a16a5749d32137af1566c1_Logo%20White.svg);
+    background-repeat: no-repeat;
+}
+
+.question {
+    width: 400px;
+    height: 100px;
+    border-radius: 25px;
+    background-color: #ffffff;
+    position: relative;
+    left: -350px;
+    top: -2100px; 
+    animation: text 10s ease-in forwards;
+}
+
+.response {
+    opacity: 0;
+    width: 400px;
+    height: 380px;
+    border-radius: 25px;
+    background-color: #1749A5;
+    color:#ffffff;
+    position: relative;
+    left: 350px;
+    top: -2180px; 
+    animation: text 10s ease-in 3s forwards;
+}
+
+p {
+    font-size: 1.5em;
+    margin: 0 4vmin;
+}
+
+@keyframes nod-layer-1 {
+    0% {
+        transform: translateY(0) scaleY(1);
+    }
+    25% {
+        transform: translateY(-7px) scaleY(1.5);
+
+    }
+    75% {
+        transform: translateY(7px) scaleY(.5);
+
+    }
+    100% {
+        transform: translateY(0) scaleY(1);
+
+    }
+}
+
+@keyframes nod-layer-2 {
+    0% {
+        transform: translateY(0);
+    }
+    25% {
+        transform: translateY(-5px);
+
+    }
+    75% {
+        transform: translateY(5px);
+
+    }
+    100% {
+        transform: translateY(0);
+
+    }
+}
+
+@keyframes nod-layer-3 {
+    0% {
+        transform: scaleY(1) translateY(0);
+    }
+    25% {
+        transform: scaleY(1.2) translateY(-2px);
+
+    }
+    75% {
+        transform: scaleY(1) translateY(2px);
+
+    }
+    100% {
+        transform: scaleY(1) translateY(0);
+
+    }
+}
+
+@keyframes nod-layer-4 {
+    0% {
+        transform: translateY(0);
+    }
+    25% {
+        transform: translateY(5px);
+
+    }
+    75% {
+        transform: translateY(-5px);
+
+    }
+    100% {
+        transform: translateY(0);
+
+    }
+}
+
+
+/* @keyframes turn2 {
+    0% {
+        transform: translateX(0);
+    }
+    25% {
+        transform: translateX(2px);
+    }
+    75% {
+        transform: translateX(-2px);
+    }
+    100% {
+        transform: translateX(0);
+    }
+} */
+
+/* @keyframes turn3 {
+    0% {
+        transform: translateX(0);
+    }
+    25% {
+        transform: translateX(1px);
+    }
+    75% {
+        transform: translateX(-1px);
+    }
+    100% {
+        transform: translateX(0);
+    }
+} */
+
+/* @keyframes turn4 {
+    0% {
+        border-radius: 100% 100% / 70% 70% 120% 120%;
+    }
+    25% {
+        border-radius: 100% 100% / 70% 70% 120% 110%;
+    }
+    75% {
+        border-radius: 100% 100% / 70% 70% 110% 120%;
+
+    }
+    100% {
+        border-radius: 100% 100% / 70% 70% 120% 120%;
+    }
+} */
+
+/* @keyframes turn5 {
+    0% {
+        border-radius: 100% / 50% 50% 10% 10%;
+    }
+    25% {
+        border-radius: 100% / 50% 55% 10% 10%;
+    }
+    75% {
+        border-radius:  100% / 55% 50% 10% 10%;
+    }
+    100% {
+        border-radius: 100% / 50%  50% 10% 10%;
+    }
+} */
+
+@keyframes text {
+    0% {
+        transform: translateY(50px);
+        opacity: 0;
+    }
+    10% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
