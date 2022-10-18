@@ -42,7 +42,7 @@ body {
     /* border-radius: 100% 100% / 300% 300% 100% 12%; */
     z-index: 2;
     margin: 10px 0 0 0;
-    animation: nod-layer-2 2s ease-in 3s infinite;
+    animation: nod-layer-2 2s linear 3s infinite;
 }
 
 .lip {
@@ -57,7 +57,7 @@ body {
     border-radius: 100% 100% / 300% 300% 12% 12%;
     z-index: 2;
     margin: 15px;
-    animation: nod-layer-2 2s ease-in 3s infinite;
+    animation: nod-layer-2 2s linear 3s infinite;
 }
 
 .nose3 {
@@ -67,7 +67,7 @@ body {
     border-radius: 100% 100%;
     z-index: 2;
     position: relative;
-    animation: nod-layer-1 2s ease-in 3s infinite;
+    animation: nod-layer-1 2s linear 3s infinite;
 }
 
 .left-eye {
@@ -78,7 +78,7 @@ body {
     z-index: 2;
     margin: 5px 16px 0 16px;
     animation: turn 1.2s linear infinite;
-    animation: nod-layer-2 2s ease-in 3s infinite;
+    animation: nod-layer-2 2s linear 3s infinite;
 }
 
 .right-eye {
@@ -88,7 +88,7 @@ body {
     border-radius: 50%;
     z-index: 2;
     margin: 5px 16px 0 16px;
-    animation: nod-layer-2 2s ease-in 3s infinite;
+    animation: nod-layer-2 2s linear 3s infinite;
 }
 
 .iris {
@@ -108,7 +108,7 @@ body {
     position: relative;
     margin: 0 16px;
     top:-43px;
-    animation: nod-layer-3 2s ease-in 3s infinite;
+    animation: nod-layer-3 2s linear 3s infinite;
 }
 
 .left-ear {
@@ -121,7 +121,7 @@ body {
     position: relative;
     top: -120px;
     box-shadow: inset 0 .5em var(--skin);
-    animation: nod-layer-4 2s ease-in 3s infinite;
+    animation: nod-layer-4 2s linear 3s infinite;
 }
 
 .right-ear {
@@ -134,7 +134,7 @@ body {
     position: relative;
     top: -120px;
     box-shadow: inset 0 .5em var(--skin);
-    animation: nod-layer-4 2s ease-in 3s infinite;
+    animation: nod-layer-4 2s linear 3s infinite;
 }
 
 .left-brow {
@@ -145,7 +145,7 @@ body {
     border-radius: 80% 100% 30% 40% / 70% 100% 90% 100%;
     z-index: 3;
     margin: 80px 10px 0 10px;
-    animation: nod-layer-2 2s ease-in 3s infinite;
+    animation: nod-layer-2 2s linear 3s infinite;
 }
 
 .right-brow {
@@ -156,7 +156,7 @@ body {
     border-radius: 100% 80% 40% 30% / 100% 70% 100% 90%;
     z-index: 3;
     margin: 80px 10px 0 10px;
-    animation: nod-layer-2 2s ease-in 3s infinite;
+    animation: nod-layer-2 2s linear 3s infinite;
 }
 
 .hair-back {
@@ -167,14 +167,14 @@ body {
     z-index: -1;
     position: relative;
     top: -380px;
-    animation: nod-layer-4 2s ease-in 3s infinite;
+    animation: nod-layer-4 2s linear 3s infinite;
 }
 
 .hair-front {
     position: relative;
     top: -660px;
     z-index: 4;
-    animation: nod-layer-2 2s ease-in 3s infinite;
+    animation: nod-layer-2 2s linear 3s infinite;
 }
 
 .hair-front-left {
@@ -206,7 +206,7 @@ body {
     z-index: 3;
     position: relative;
     top: -979px;
-    animation: nod-layer-2 2s ease-in 3s infinite;
+    animation: nod-layer-2 2s linear 3s infinite;
 }
 
 .highlights {
@@ -269,34 +269,6 @@ body {
     background-repeat: no-repeat;
 }
 
-.question {
-    width: 400px;
-    height: 100px;
-    border-radius: 25px;
-    background-color: #ffffff;
-    position: relative;
-    left: -350px;
-    top: -2100px; 
-    animation: text 10s ease-in forwards;
-}
-
-.response {
-    opacity: 0;
-    width: 400px;
-    height: 380px;
-    border-radius: 25px;
-    background-color: #1749A5;
-    color:#ffffff;
-    position: relative;
-    left: 350px;
-    top: -2180px; 
-    animation: text 10s ease-in 3s forwards;
-}
-
-p {
-    font-size: 1.5em;
-    margin: 0 4vmin;
-}
 
 @keyframes nod-layer-1 {
     0% {
@@ -343,7 +315,7 @@ p {
 
     }
     75% {
-        transform: scaleY(1) translateY(2px);
+        transform: scaleY(1) translateY(0);
 
     }
     100% {
@@ -370,79 +342,3 @@ p {
     }
 }
 
-
-/* @keyframes turn2 {
-    0% {
-        transform: translateX(0);
-    }
-    25% {
-        transform: translateX(2px);
-    }
-    75% {
-        transform: translateX(-2px);
-    }
-    100% {
-        transform: translateX(0);
-    }
-} */
-
-/* @keyframes turn3 {
-    0% {
-        transform: translateX(0);
-    }
-    25% {
-        transform: translateX(1px);
-    }
-    75% {
-        transform: translateX(-1px);
-    }
-    100% {
-        transform: translateX(0);
-    }
-} */
-
-/* @keyframes turn4 {
-    0% {
-        border-radius: 100% 100% / 70% 70% 120% 120%;
-    }
-    25% {
-        border-radius: 100% 100% / 70% 70% 120% 110%;
-    }
-    75% {
-        border-radius: 100% 100% / 70% 70% 110% 120%;
-
-    }
-    100% {
-        border-radius: 100% 100% / 70% 70% 120% 120%;
-    }
-} */
-
-/* @keyframes turn5 {
-    0% {
-        border-radius: 100% / 50% 50% 10% 10%;
-    }
-    25% {
-        border-radius: 100% / 50% 55% 10% 10%;
-    }
-    75% {
-        border-radius:  100% / 55% 50% 10% 10%;
-    }
-    100% {
-        border-radius: 100% / 50%  50% 10% 10%;
-    }
-} */
-
-@keyframes text {
-    0% {
-        transform: translateY(50px);
-        opacity: 0;
-    }
-    10% {
-        transform: translateY(0);
-        opacity: 1;
-    }
-    100% {
-        transform: translateY(0);
-        opacity: 1;
-    }
-}

@@ -72,13 +72,6 @@ const Character = () => {
                     <div class='highlight-left'></div>
                     <div class='highlight-right'></div>
                 </div>
-        
-                {/* <div className='question container-column'>
-                    <p>¿Necesito un número de seguro social para abrir una cuenta?</p>
-                </div>
-                <div className='response container-column'>
-                    <p>Para abrir una cuenta con nosotros no necesitas número de seguro social y solo es necesario proveer dos cosas al momento de aplicar 1) Una identificación oficial: puede ser el pasaporte de tu país, matrícula consular o credencial para votar. 2) Comprobante de domicilio: recibo de luz, o una carta oficial. Aquí es donde te enviaremos tu tarjeta. ¡Es todo!</p>
-                </div> */}
             </div>
         </body>
     )
