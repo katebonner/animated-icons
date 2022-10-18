@@ -1,5 +1,3 @@
-
-import './App.css';
 import Logo from './components/logo';
 import Animations from './components/animations';
 import Required from './components/required';
